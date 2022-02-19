@@ -11,7 +11,7 @@ export const SearchBar = () => {
       <TextInput
         style={styles.search}
         value={search}
-        placeholder="Whay do you want to eat?"
+        placeholder="What do you want to eat?"
         onChangeText={setSearch}
       />
       <Icon name="mic-outline" color="white" size={25} />
@@ -23,10 +23,6 @@ const styles = StyleSheet.create({
   search: {
     color: 'white',
     padding: 5,
-    // borderRadius: 10,
-    // backgroundColor: 'grey',
-    // height: 40,
-    // margin: 20,
   },
   containerSearch: {
     backgroundColor: 'grey',
