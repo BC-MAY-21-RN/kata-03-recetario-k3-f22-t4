@@ -1,10 +1,18 @@
 import React from 'react';
-import {View, Text} from 'react-native';
+import {View, StyleSheet} from 'react-native';
+import {SearchBar} from '../components/SearchBar';
 
 export const HomeScreen = () => {
   return (
-    <View style={{flex: 1, alignItems: 'center', justifyContent: 'center'}}>
-      <Text style={{color: 'red'}}>Home screen</Text>
+    <View style={styles.containerHome}>
+      <SearchBar />
     </View>
   );
 };
+
+const styles = StyleSheet.create({
+  containerHome: {
+    flex: 1,
+    backgroundColor: '#4B4A4B',
+  },
+});
