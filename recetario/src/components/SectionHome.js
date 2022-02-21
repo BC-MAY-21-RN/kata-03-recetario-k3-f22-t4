@@ -3,8 +3,6 @@ import { FlatList, Text, View, StyleSheet } from "react-native";
 import { api } from "../api/food";
 import { FoodHome } from "./FoodHome";
 
-
-
 export const SectionHome = ({ section }) => {
     const typeFood = api.filter(food => food.section === section);
     const renderItem = ({ item }) => (
