@@ -36,5 +36,4 @@ const styles = StyleSheet.create({
         color: 'deeppink',
         fontSize: 20,
     }
-
 })
