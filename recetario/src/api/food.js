@@ -5,12 +5,12 @@ export const api = [
     img: require('../img/pizza1.jpg'),
     section: 'TRENDING',
     ingredients: {
-      serving: 'for 3 servings',
+      serving: 'for 10 servings',
       ingredientsALL: [
         {
           id: 1,
           name: 'peperonni',
-          amount: '15 slices',
+          amount: '40 slices',
         },
         {
           id: 2,
@@ -34,12 +34,12 @@ export const api = [
         },
         {
           id: 6,
-          name: 'ham',
+          name: 'ham2',
           amount: '10 slices',
         },
         {
           id: 7,
-          name: 'tomato',
+          name: 'tomatos',
           amount: '8',
         },
         {
@@ -56,7 +56,7 @@ export const api = [
     img: require('../img/pizza2.jpg'),
     section: 'TRENDING',
     ingredients: {
-      serving: 'for 5 servings',
+      serving: 'for 3 servings',
       ingredientsALL: [
         {
           id: 1,
@@ -87,7 +87,7 @@ export const api = [
     img: require('../img/pizza3.jpg'),
     section: 'TRENDING',
     ingredients: {
-      serving: 'for 5 servings',
+      serving: 'for 4 servings',
       ingredientsALL: [
         {
           id: 1,
@@ -118,7 +118,7 @@ export const api = [
     img: require('../img/pizza4.jpg'),
     section: 'TRENDING',
     ingredients: {
-      serving: 'for 5 servings',
+      serving: 'for 4 servings',
       ingredientsALL: [
         {
           id: 1,
@@ -145,11 +145,11 @@ export const api = [
   },
   {
     id: 5,
-    name: 'Pizza de salami',
+    name: 'Pizza vegetariana',
     img: require('../img/pizza3.jpg'),
     section: 'RECENT',
     ingredients: {
-      serving: 'for 5 servings',
+      serving: 'for 6 servings',
       ingredientsALL: [
         {
           id: 1,
@@ -176,42 +176,42 @@ export const api = [
   },
   {
     id: 6,
-    name: 'Pizza de espinacas',
+    name: 'Pizza de pastor',
     img: require('../img/pizza4.jpg'),
     section: 'RECENT',
     ingredients: {
-      serving: 'for 5 servings',
+      serving: 'for 9 servings',
       ingredientsALL: [
         {
           id: 1,
           name: 'refrigerated biscuit',
-          amount: '1 tube',
+          amount: '2 tube',
         },
         {
           id: 2,
           name: 'frozen mini meatballs',
-          amount: '24',
+          amount: '30',
         },
         {
           id: 3,
           name: 'marinada sauce',
-          amount: '1 jar',
+          amount: '6 jar',
         },
         {
           id: 4,
           name: 'sherdded mozzarella cheese',
-          amount: '2 cup',
+          amount: '6 cup',
         },
       ],
     },
   },
   {
     id: 7,
-    name: 'Pizza de espinacas',
+    name: 'Pizza de mariscos',
     img: require('../img/pizza6.jpg'),
     section: 'RECENT',
     ingredients: {
-      serving: 'for 5 servings',
+      serving: 'for 7 servings',
       ingredientsALL: [
         {
           id: 1,
@@ -221,17 +221,17 @@ export const api = [
         {
           id: 2,
           name: 'frozen mini meatballs',
-          amount: '24',
+          amount: '12',
         },
         {
           id: 3,
           name: 'marinada sauce',
-          amount: '1 jar',
+          amount: '3 jar',
         },
         {
           id: 4,
           name: 'sherdded mozzarella cheese',
-          amount: '2 cup',
+          amount: '4 cup',
         },
       ],
     },
