@@ -1,16 +1,18 @@
 import React from "react";
-import { Text, View, StyleSheet, ImageBackground } from "react-native";
+import { Text, View, StyleSheet, ImageBackground, TouchableOpacity } from "react-native";
 import Icon from 'react-native-vector-icons/Ionicons';
 
 
-export const MainDetail = ({food}) => {
+export const MainDetail = ({food, navigation }) => {
 
     return (
         <View style={styles.containerMain}>
-            <ImageBackground source={food.img} style={styles.imageBackground}>
+            <ImageBackground source={food.img} style={styles.imageBackground} imageStyle={{opacity: 0.5}}>
                 <View style={styles.containerIcons}>
                     <View>
-                        <Icon name="close-outline" color="white" size={50}/>
+                        <TouchableOpacity onPress={() => navigation.goBack() }>
+                            <Icon name="close-outline" color="white" size={50}/>
+                        </TouchableOpacity>
                     </View>
                     <View style={styles.right}>
                         <Icon name="download-outline" color="white" size={50}/>
@@ -33,12 +35,12 @@ export const MainDetail = ({food}) => {
 const styles = StyleSheet.create({
     
     containerMain: {
-        flex: 1
+        flex: 1,
+        backgroundColor: '#4B4A4B'
     },
 
     imageBackground:{
         height: 430,
-        // opacity: 0.8
         justifyContent: 'space-between',
     },
 
