@@ -3,12 +3,18 @@ import {View, StyleSheet} from 'react-native';
 import {SearchBar} from '../components/SearchBar';
 import { SectionHome } from '../components/SectionHome';
 
-export const HomeScreen = () => {
+export const HomeScreen = ({navigation}) => {
   return (
     <View style={styles.containerHome}>
       <SearchBar />
-      <SectionHome section="TRENDING"/>
-      <SectionHome section="RECENT"/>
+      <SectionHome 
+      section="TRENDING"
+      navigation={navigation}
+      />
+      <SectionHome 
+      section="RECENT"
+      navigation={navigation}
+      />
     </View>
   );
 };

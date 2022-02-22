@@ -1,16 +1,20 @@
 import React from "react";
-import { FlatList, Text, View, StyleSheet } from "react-native";
+import { FlatList, Text, View, StyleSheet, TouchableOpacity } from "react-native";
 import { api } from "../api/food";
 import { FoodHome } from "./FoodHome";
 
-export const SectionHome = ({ section }) => {
+export const SectionHome = ({ section, navigation }) => {
     const typeFood = api.filter(food => food.section === section);
     const renderItem = ({ item }) => (
-        <FoodHome 
-            type={item.section}
-            name={item.name}
-            img={item.img}
-        />
+        <TouchableOpacity 
+        onPress={() => navigation.navigate('DetailFood', {food: item})}
+        >
+            <FoodHome 
+                type={item.section}
+                name={item.name}
+                img={item.img}
+            />
+        </TouchableOpacity>
     )
 
     return (
