@@ -7,13 +7,16 @@ export const SearchBar = () => {
 
   return (
     <View style={styles.containerSearch}>
-      <Icon name="search-outline" color="white" size={25} />
-      <TextInput
-        style={styles.search}
-        value={search}
-        placeholder="What do you want to eat?"
-        onChangeText={setSearch}
-      />
+      <View style={styles.containerTexto}>
+        <Icon name="search-outline" color="white" size={25} />
+        <TextInput
+          style={styles.search}
+          value={search}
+          placeholder="What do you want to eat?"
+          placeholderTextColor={'white'}
+          onChangeText={setSearch}
+        />
+      </View>
       <Icon name="mic-outline" color="white" size={25} />
     </View>
   );
@@ -22,7 +25,8 @@ export const SearchBar = () => {
 const styles = StyleSheet.create({
   search: {
     color: 'white',
-    padding: 5,
+    padding: 4,
+
   },
   containerSearch: {
     backgroundColor: 'grey',
@@ -34,4 +38,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'space-between',
   },
+  containerTexto:{
+    flexDirection: 'row',
+  }
 });

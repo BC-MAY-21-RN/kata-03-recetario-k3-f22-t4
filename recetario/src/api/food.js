@@ -220,7 +220,7 @@ export const api = [
         },
         {
           id: 2,
-          name: 'frozen mini meatballs',
+          name: 'frozen mini meatballs 2',
           amount: '12',
         },
         {

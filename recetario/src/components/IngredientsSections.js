@@ -15,7 +15,7 @@ export const IngredientsSection = ({food}) => {
         return (
             <View
                 style={{
-                    borderBottomWidth: 1,
+                    borderBottomWidth: 0.6,
                     opacity: 0.4,
                     marginVertical: 8,
                     backgroundColor: 'white',
@@ -66,6 +66,7 @@ const styles = StyleSheet.create({
     },
     ingredientText: {
         color: 'white',
+        fontSize: 16,
     },
     
 })

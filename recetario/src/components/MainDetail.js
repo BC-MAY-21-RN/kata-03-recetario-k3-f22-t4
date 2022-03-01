@@ -11,12 +11,12 @@ export const MainDetail = ({food, navigation }) => {
                 <View style={styles.containerIcons}>
                     <View>
                         <TouchableOpacity onPress={() => navigation.goBack() }>
-                            <Icon name="close-outline" color="white" size={50}/>
+                            <Icon name="close-outline" color="white" size={40}/>
                         </TouchableOpacity>
                     </View>
                     <View style={styles.right}>
-                        <Icon name="download-outline" color="white" size={50}/>
-                        <Icon name="heart-outline" color="white" size={50}/>
+                        <Icon name="download-outline" color="white" size={40} style={styles.icon}/>
+                        <Icon name="heart-outline" color="white" size={40}/>
                     </View>
                 </View>
                 <View style={styles.containerAbout}>
@@ -67,5 +67,8 @@ const styles = StyleSheet.create({
     nameFood: {
         fontSize: 30,
         color: "white"
+    },
+    icon:{
+        paddingRight: 15,
     }
 })
